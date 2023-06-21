@@ -13,6 +13,7 @@ h1 {
   color: rgb(83, 49, 156);
 }
 
+/* GENERICS */
 .container {
   background-color: white;
   width: 100%;
@@ -26,6 +27,15 @@ h1 {
   position: relative;
 }
 
+.line {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 98px;
+  background-color: rgb(231, 231, 231);
+}
+
+/* TABS */
 .tabs {
   display: flex;
   width: 100%;
@@ -46,15 +56,6 @@ h1 {
   color: rgb(83, 49, 156);
   position: relative;
 }
-
-.line {
-  height: 3px;
-  width: 100%;
-  position: absolute;
-  top: 98px;
-  background-color: rgb(231, 231, 231);
-}
-
 .tabs .active:before {
   content: "";
   width: 60px;
@@ -66,4 +67,38 @@ h1 {
   left: -50%;
   z-index: 1;
   border-radius: 10px;
+}
+
+/* SELECTOR */
+.toggle-wrapper {
+  display: flex;
+  padding: 30px;
+}
+.toggle-wrapper img {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toggle {
+  background-color: rgb(83, 49, 156);
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 0 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.toggle span:first-of-type {
+  color: white;
+}
+.toggle span:last-of-type {
+  color: rgb(83, 49, 156);
+  background-color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
 }
